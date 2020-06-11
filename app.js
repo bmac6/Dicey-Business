@@ -1,12 +1,19 @@
 const getDice = document.getElementById("generate-dice");
 const diceContainer = document.createElement("dice-container");
 const rollDice = document.getElementById("sq-button");
+sumDice = document.getElementById("sum-dice");
 let counter = 1;
 let diceArray= []
 
 document.body.appendChild(diceContainer);
 getDice.addEventListener("click", () => new Die(genDieValue()));
+sumDice.addEventListener("click", () => {
+  let sum = 0;
+  diceArray.forEach(die => sum += die.value);
+  alert(sum);
+});
 rollDice.addEventListener("click",diceRoll);
+
 function genDieValue() {
   return Math.floor(Math.random() * 6 + 1);
 }
