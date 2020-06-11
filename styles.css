@@ -1,0 +1,25 @@
+
+    .dice{
+        border: 10px solid darkgreen;
+        font-size: x-large;
+        background-color:white; 
+        color: black;
+        height: 6em;
+        width: 6em;
+        display: flex;
+        float: left;
+        margin: 1em;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    body  {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+#sq-button {
+    font-size: large;
+    background-color: darkgreen;
+    float: left;
+}
